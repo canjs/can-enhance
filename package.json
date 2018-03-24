@@ -1,0 +1,41 @@
+{
+  "name": "can-enhance",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "preversion": "npm test",
+    "test": "npm run eslint",
+    "eslint": "eslint \"**/*.js\" --ignore-pattern \"dist\" --ignore-pattern \"node_modules\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canjs/can-enhance.git"
+  },
+  "author": "Julian Kern",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canjs/can-enhance/issues"
+  },
+  "homepage": "https://github.com/canjs/can-enhance#readme",
+  "steal": {},
+  "devDependencies": {
+    "can-dom-events": "^1.1.4",
+    "can-simple-map": "^4.0.1",
+    "can-util": "^3.11.5",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "hyperscript": "^2.0.2",
+    "mocha": "^5.0.5",
+    "sinon": "^4.4.8",
+    "steal": "^1.11.0",
+    "steal-mocha": "git+https://github.com/stealjs/steal-mocha.git#mocha5"
+  },
+  "dependencies": {
+    "can-reflect": "^1.13.3",
+    "can-view-model": "^4.0.1"
+  }
+}
